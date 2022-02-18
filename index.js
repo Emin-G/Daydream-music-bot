@@ -258,13 +258,15 @@ bot.on("messageCreate", async (message) => {
         if (!playlist[message.guild.id]) return erremb(":triangular_flag_on_post:  **|**  재생 목록을 찾지 못했습니다!", "이것 참 심오하군요...");
 
         if (!args[1]) {
-            if (station[message.guild.id]) {
+            if (station[message.guild.id] === "on") {
                 station[message.guild.id] = false;
                 const staemb = new MessageEmbed()
                 .setColor("#0x7d3640")
                 .setTitle(":negative_squared_cross_mark:  **|**  스테이션 기능이 해제 되었습니다!")
                 message.channel.send({ embeds: [staemb] });
             }
+
+            else if (station[message.guild.id] === "repeat") return erremb(":triangular_flag_on_post:  **|**  반복 기능이 이미 활성화 되어있습니다!", "스테이션 기능은 반복 기능과 동시에 사용할 수 없습니다.\n반복을 종료하려면 반복 끄기를 입력해주세요.");
 
             else {
                 station[message.guild.id] = "on";
@@ -277,7 +279,7 @@ bot.on("messageCreate", async (message) => {
 
         else {
             if (args[1] === "켜기") {
-                if (station[message.guild.id]) return erremb(":triangular_flag_on_post:  **|**  스테이션 기능이 이미 활성화 되어있습니다!", "스테이션을 종료하려면 스테이션 끄기를 입력해주세요.");
+                if (station[message.guild.id] === "on") return erremb(":triangular_flag_on_post:  **|**  스테이션 기능이 이미 활성화 되어있습니다!", "스테이션을 종료하려면 스테이션 끄기를 입력해주세요.");
                 station[message.guild.id] = "on";
                 const staemb = new MessageEmbed()
                 .setColor("#0x7d3640")
@@ -306,6 +308,51 @@ bot.on("messageCreate", async (message) => {
             else return erremb(":triangular_flag_on_post:  **|**  지정된 스테이션 상태가 올바르지 않습니다!", "스테이션 켜기 혹은 끄기로 상태를 지정 할 수 있습니다.");
         }
 
+    }
+
+    if (args[0] === "반복") {
+        if (!connection[message.guild.id] || getVoiceConnection(message.guild.id)._state.status !== "ready") return erremb(":triangular_flag_on_post:  **|**  재생 중인 노래가 없습니다!", "재생 중인 노래가 없어 반복 기능을 활성화 하지 못했습니다.");
+        if (!playlist[message.guild.id]) return erremb(":triangular_flag_on_post:  **|**  재생 목록을 찾지 못했습니다!", "이것 참 심오하군요...");
+
+        if (!args[1]) {
+            if (station[message.guild.id] === "repeat") {
+                station[message.guild.id] = false;
+                const staemb = new MessageEmbed()
+                .setColor("#0x7d3640")
+                .setTitle(":negative_squared_cross_mark:  **|**  반복 기능이 해제 되었습니다!")
+                message.channel.send({ embeds: [staemb] });
+            }
+
+            else if (station[message.guild.id] === "on") return erremb(":triangular_flag_on_post:  **|**  스테이션 기능이 이미 활성화 되어있습니다!", "반복 기능은 스테이션 기능과 동시에 사용할 수 없습니다.\n스테이션을 종료하려면 스테이션 끄기를 입력해주세요.");
+
+            else {
+                station[message.guild.id] = "repeat";
+                const staemb = new MessageEmbed()
+                .setColor("#0x7d3640")
+                .setTitle(":repeat:  **|**  반복 기능이 활성화 되었습니다!")
+                message.channel.send({ embeds: [staemb] });
+            }
+        }
+        
+        else {
+            if (args[1] === "켜기") {
+                if (station[message.guild.id] === "repeat") return erremb(":triangular_flag_on_post:  **|**  반복 기능이 이미 활성화 되어있습니다!", "반복을 종료하려면 반복 끄기를 입력해주세요.");
+                station[message.guild.id] = "repeat";
+                const staemb = new MessageEmbed()
+                .setColor("#0x7d3640")
+                .setTitle(":repeat:  **|**  반복 기능이 활성화 되었습니다!")
+                message.channel.send({ embeds: [staemb] });
+            }
+
+            else if (args[1] === "끄기") {
+                if (!station[message.guild.id]) return erremb(":triangular_flag_on_post:  **|**  반복 기능이 아직 활성화 되지 않았습니다!", "반복을 시작하려면 반복 켜기를 입력해주세요.");
+                station[message.guild.id] = false;
+                const staemb = new MessageEmbed()
+                .setColor("#0x7d3640")
+                .setTitle(":negative_squared_cross_mark:  **|**  반복 기능이 해제 되었습니다!")
+                message.channel.send({ embeds: [staemb] });
+            }
+        }
     }
 
     function stat_handler (guildId) {
@@ -443,6 +490,12 @@ bot.on("messageCreate", async (message) => {
         player[message.guild.id].play(resource[message.guild.id]);
 
         player[message.guild.id].once(AudioPlayerStatus.Idle, () => {
+            if (station[message.guild.id] === "repeat") {
+                adder(title, id, true);
+                return skiper(0, () => {
+                    return handler(message.guild.id);
+                });
+            }
             if (!playlist[message.guild.id][1] && station[message.guild.id]) return stat_handler(message.guild.id);
             return skiper(0, () => {
                 return handler(message.guild.id);

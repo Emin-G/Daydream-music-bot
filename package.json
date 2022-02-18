@@ -12,9 +12,11 @@
   "author": "Emin_G",
   "license": "MIT",
   "dependencies": {
+    "@discordjs/opus": "^0.5.3",
     "@discordjs/voice": "^0.8.0",
     "discord.js": "^13.6.0",
     "dotenv": "^16.0.0",
+    "tweetnacl": "^1.0.3",
     "ytdl-core": "^4.10.1"
   },
   "repository": {

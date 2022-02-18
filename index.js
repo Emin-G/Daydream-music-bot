@@ -134,7 +134,7 @@ bot.on("messageCreate", async (message) => {
                 .setColor("#0x7d3640")
                 .setAuthor({ name: "검색 결과", iconURL: message.author.displayAvatarURL() })
                 .setDescription(res)
-                .setFooter({ name: "트랙 번호만 입력하시거나 취소하시려면  `취소`  라고 입력해 주세요." })
+                .setFooter({ text: "트랙 번호만 입력하시거나 취소하시려면  `취소`  라고 입력해 주세요." })
                 message.channel.send({ embeds: [src] }).then((bef_msg) => {
                     message.channel.awaitMessages({
                         filter: m => m.author.id === message.author.id,

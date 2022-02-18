@@ -24,6 +24,8 @@
 
 ## 설치
 
+Node.js 16.x 버전 필요함
+
  1. `git clone https://github.com/Emin-G/Daydream-music-bot.git`
  2. `cd Daydream-music-bot/`
  3. `npm install`
@@ -55,7 +57,7 @@
 
 **예시**
 
-![:bookmark:](https://discord.com/assets/2424297076c0d1c8499820fc4f9d9f57.svg) **|** 재생 목록
+재생 목록
 
 **`1`** | 테스트 곡
 **`2`** | 다음 테스트 곡

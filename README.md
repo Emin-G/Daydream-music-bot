@@ -1,7 +1,7 @@
 #  Daydream Preview
 
 <p align="center">
-<img src="https://cdn.discordapp.com/attachments/700169481837740122/944234455101493248/sketch-1645180353820_ai-painter.png" alt="Daydream" width="40%">
+<img src="https://cdn.discordapp.com/attachments/700169481837740122/944227133385998346/sketch-1645180353820.png" alt="Daydream" width="40%">
 </p>
 
 > 심플한 한국어 기반 디스코드 뮤직 봇

@@ -38,14 +38,14 @@ function getPlaylist (id, callback) {
         if (!nextPageToken) {
             options = {
                 host: "youtube.googleapis.com",
-                path: encodeURI("/youtube/v3/playlistItems?part=snippet&fields=items(id,snippet(title))&maxResults=50&playlistId=" + id + "&key=" + process.env.YOUTUBE_API)
+                path: encodeURI("/youtube/v3/playlistItems?part=snippet&fields=nextPageToken,items(id,snippet(title))&maxResults=50&playlistId=" + id + "&key=" + process.env.YOUTUBE_API)
             }
         }
 
         else {
             options = {
                 host: "youtube.googleapis.com",
-                path: encodeURI("/youtube/v3/playlistItems?part=snippet&fields=items(id,snippet(title))&maxResults=50&pageToken=" + nextPageToken + "&playlistId=" + id + "&key=" + process.env.YOUTUBE_API)
+                path: encodeURI("/youtube/v3/playlistItems?part=snippet&fields=nextPageToken,items(id,snippet(title))&maxResults=50&pageToken=" + nextPageToken + "&playlistId=" + id + "&key=" + process.env.YOUTUBE_API)
             }
         }
 

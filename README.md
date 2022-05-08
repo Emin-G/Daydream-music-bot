@@ -33,6 +33,8 @@ Node.js 16.x 버전 필요
 
 사용 전 .env 파일의  BOT_TOKEN=  과  YOUTUBE_API=  를 수정해 주세요.
 
+FFMPEG 설치가 필요합니다.
+
 ## 재생
 > !재생 [옵션]
 

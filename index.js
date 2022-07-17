@@ -2,7 +2,13 @@ const { Client, Util, MessageEmbed, Intents, Permissions } = require("discord.js
 const { joinVoiceChannel, createAudioPlayer, createAudioResource, AudioPlayerStatus, VoiceConnectionStatus, getVoiceConnection } = require("@discordjs/voice");
 
 const ytdl = require("ytdl-core");
+const ytpl = require("ytpl");
 const youtube = require("./youtube/youtube.js");
+
+//Version Check
+const vm = require("./support/vm.js");
+vm.chkVersion();
+//Version Check
 
 require("dotenv").config();
 
@@ -49,7 +55,8 @@ bot.on("messageCreate", async (message) => {
 
                 console.log(val);
 
-                return val_to_dt(val);
+                if (ytdl.validateID(val)) return val_to_dt(val);
+                else return erremb(":triangular_flag_on_post:  **|**  URL이 올바르지 않습니다!", "URL이 올바른지 다시 한번 확인 해주세요!");
             }
 
             else if (val.search("youtu.be/") > -1) {
@@ -61,7 +68,8 @@ bot.on("messageCreate", async (message) => {
 
                 console.log(val);
 
-                return val_to_dt(val);
+                if (ytdl.validateID(val)) return val_to_dt(val);
+                else return erremb(":triangular_flag_on_post:  **|**  URL이 올바르지 않습니다!", "URL이 올바른지 다시 한번 확인 해주세요!");
             }
 
             //Playlist
@@ -72,37 +80,40 @@ bot.on("messageCreate", async (message) => {
                 }
 
                 console.log(val);
+                console.log(ytpl.validateID(val));
 
-                youtube.getPlaylist(val, (list) => {
-                    console.log(list);
-                    if (!list[0].items) return erremb(":triangular_flag_on_post:  **|**  URL 형식이 올바르지 않습니다!", "URL이 올바른지 다시 한번 확인 해주세요!");
-                    
-                    console.log(list);
+                if (ytpl.validateID(val)) {
 
-                    let res = "";
-                    let orig = 1;
-
-                    for (let unter in list) {
-                        console.log(list[unter].items);
-                        for (let counter in list[unter].items) {
-                            console.log(list[unter].items[counter]);
-                            console.log(list[unter].items[counter].snippet.title);
-                            console.log(list[unter].items[counter].snippet.resourceId.videoId);
-
-                            res += "**`" + orig + "`** | " + list[unter].items[counter].snippet.title + "\n";
+                    youtube.getPlaylist(val, async (list) => {
+                        console.log(list);
+                        if (!list) return erremb(":triangular_flag_on_post:  **|**  URL이 올바르지 않습니다!", "URL이 올바른지 다시 한번 확인 해주세요!");
+                        
+                        console.log(list);
+    
+                        let res = "";
+                        let orig = 1;
+    
+                        for (let unter in list) {
+                            console.log(list[unter]);
+                            console.log(list[unter].title);
+                            console.log(list[unter].id);
+    
+                            res += "**`" + orig + "`** | " + list[unter].title + "\n";
                             ++orig;
-                            adder(list[unter].items[counter].snippet.title, list[unter].items[counter].snippet.resourceId.videoId, true);
+
+                            await adder(list[unter].title, list[unter].id, true);
                         }
-                    }
+    
+                        const listemb = new MessageEmbed()
+                        .setColor("#0x7d3640")
+                        .setTitle(":white_check_mark:  **|**  재생목록에 추가했습니다!")
+                        .setDescription(res)
+                        .setThumbnail("https://img.youtube.com/vi/" + list[0].id + "/mqdefault.jpg")
+                        return message.channel.send({ embeds: [listemb] });
+                    });
 
-                    const listemb = new MessageEmbed()
-                    .setColor("#0x7d3640")
-                    .setTitle(":white_check_mark:  **|**  재생목록에 추가했습니다!")
-                    .setDescription(res)
-                    .setThumbnail("https://img.youtube.com/vi/" + list[0].items[0].snippet.resourceId.videoId + "/mqdefault.jpg")
-                    return message.channel.send({ embeds: [listemb] });
-
-                });
+                }
+                else return erremb(":triangular_flag_on_post:  **|**  URL이 올바르지 않습니다!", "URL이 올바른지 다시 한번 확인 해주세요!");
             }
             //Playlist
 
@@ -111,9 +122,7 @@ bot.on("messageCreate", async (message) => {
             function val_to_dt (val_in) {
                 youtube.getVideo(val_in, (data) => {
                     console.log(data);
-                    console.log(data.items.length);
-                    if (data.items.length < 1) return erremb(":triangular_flag_on_post:  **|**  URL 형식이 올바르지 않습니다!", "URL이 올바른지 다시 한번 확인 해주세요!");
-                    return adder(data.items[0].snippet.title, data.items[0].id, false);
+                    return adder(data.title, data.id, false);
                 });
             }
         }
@@ -361,26 +370,23 @@ bot.on("messageCreate", async (message) => {
 
         console.log(station[guildId]);
 
-        youtube.relatedVideo(playlist[guildId][0].id, (rel_video) => {
-            if (!rel_video.items) {
+        youtube.relatedVideo(playlist[guildId][0].id, async (rel_video) => {
+            if (!rel_video) {
                 return skiper(0, () => {
                     return handler(message.guild.id);
                 });
             }
 
-            for (let unter in rel_video.items) {
-                if (rel_video.items[unter].snippet) {
-                    console.log(station[guildId]);
-                    console.log(rel_video.items[unter].id.videoId);
-                    if (!station[guildId].find(element => element === rel_video.items[unter].id.videoId)) {
-                        console.log(rel_video);
-                        console.log(rel_video.items[unter]);
-                        console.log(rel_video.items[unter].snippet);
-                        adder(rel_video.items[unter].snippet.title, rel_video.items[unter].id.videoId, true);
-                        return skiper(0, () => {
-                            return handler(message.guild.id);
-                        });
-                    }
+            for (let unter in rel_video) {
+                console.log(station[guildId]);
+                console.log(rel_video[unter].id);
+                if (!station[guildId].find(element => element === rel_video[unter].id)) {
+                    console.log(rel_video);
+                    console.log(rel_video[unter]);
+                    await adder(rel_video[unter].title, rel_video[unter].id, true);
+                    return skiper(0, () => {
+                        return handler(message.guild.id);
+                    });
                 }
             }
         });
@@ -411,17 +417,17 @@ bot.on("messageCreate", async (message) => {
     async function adder (title, id, isList) {
 
         //Connection
-        console.log(getVoiceConnection(message.guild.id));
+        if (!isList) console.log(getVoiceConnection(message.guild.id));
 
-        if (!connection[message.guild.id] || getVoiceConnection(message.guild.id)._state.status !== "ready") {
+        if (!connection[message.guild.id] || await getVoiceConnection(message.guild.id)._state.status !== "ready" && await getVoiceConnection(message.guild.id)._state.status !== "signalling") {
             cleanup(message.guild.id);
             connection[message.guild.id] = await joinVoiceChannel({
                 channelId: message.member.voice.channel.id,
                 guildId: message.guild.id,
                 adapterCreator: message.guild.voiceAdapterCreator,
             });
+            console.log(getVoiceConnection(message.guild.id));
         }
-        console.log(getVoiceConnection(message.guild.id));
         //Connection
 
         //Add Song
@@ -489,9 +495,9 @@ bot.on("messageCreate", async (message) => {
 
         player[message.guild.id].play(resource[message.guild.id]);
 
-        player[message.guild.id].once(AudioPlayerStatus.Idle, () => {
+        player[message.guild.id].once(AudioPlayerStatus.Idle, async () => {
             if (station[message.guild.id] === "repeat") {
-                adder(title, id, true);
+                await adder(title, id, true);
                 return skiper(0, () => {
                     return handler(message.guild.id);
                 });

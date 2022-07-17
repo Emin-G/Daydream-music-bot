@@ -1,4 +1,6 @@
 const https = require("https");
+const ytdl = require("ytdl-core");
+const ytpl = require("ytpl");
 require("dotenv").config();
 
 function search (q, callback) {
@@ -15,68 +17,52 @@ function search (q, callback) {
     });
 }
 
-function getVideo (id, callback) {
-    console.log("[API] Youtube getVideo Requset. - " + id);
-    let options = {
-        host: "www.googleapis.com",
-        path: encodeURI("/youtube/v3/videos?part=snippet&fields=items(id,snippet(title))&id=" + id + "&key=" + process.env.YOUTUBE_API)
-    }
+async function getVideo (id, callback) {
+    console.log("[YTDL] Youtube getVideo Requset. - " + id);
 
-    gety(options, (data) => {
-        console.log("[API] Req Success.");
-        console.log(data);
-        return callback(data);
-    });
+    let data_temp = await ytdl.getBasicInfo("https://youtu.be/" + id);
+    console.log(data_temp);
+
+    let data = new Map();
+    data["id"] = data_temp["videoDetails"]["videoId"];
+    data["title"] = data_temp["videoDetails"]["title"];
+
+
+    console.log("[YTDL] Req Success.");
+    console.log(data);
+    return callback(data);
 }
 
-function getPlaylist (id, callback) {
-    console.log("[API] Youtube getPlaylist Requset. - " + id);
-    let playlist = new Map();
-    let unter = 0;
-    let options;
-    function multi_page (nextPageToken) {
-        if (!nextPageToken) {
-            options = {
-                host: "youtube.googleapis.com",
-                path: encodeURI("/youtube/v3/playlistItems?part=snippet&fields=items(id,snippet(title))&maxResults=50&playlistId=" + id + "&key=" + process.env.YOUTUBE_API)
-            }
-        }
+async function getPlaylist (id, callback) {
+    console.log("[YTPL] Youtube getPlaylist Requset. - " + id);
 
-        else {
-            options = {
-                host: "youtube.googleapis.com",
-                path: encodeURI("/youtube/v3/playlistItems?part=snippet&fields=items(id,snippet(title))&maxResults=50&pageToken=" + nextPageToken + "&playlistId=" + id + "&key=" + process.env.YOUTUBE_API)
-            }
-        }
+    let playlist;
 
-        gety(options, (data) => {
-            console.log("[API] Req Success.");
-            console.log(data);
-            playlist[unter] = data;
-            console.log(playlist);
-            ++unter;
-            if (data.nextPageToken) {
-                return multi_page(data.nextPageToken);
-            }
-            else return callback(playlist);
-        });
+    try {
+        playlist = await ytpl(id);
     }
-    
-    multi_page(null);
+
+    catch {
+        return callback(null);
+    }
+
+    console.log(playlist);
+
+    playlist = playlist["items"];
+
+    return callback(playlist);
 }
 
-function relatedVideo (id, callback) {
-    console.log("[API] Youtube relatedVideo Requset. - " + id);
-    let options = {
-        host: "www.googleapis.com",
-        path: encodeURI("/youtube/v3/search?part=snippet&fields=items(id,snippet(title))&type=video&maxResults=5&relatedToVideoId=" + id + "&key=" + process.env.YOUTUBE_API)
-    }
+async function relatedVideo (id, callback) {
+    console.log("[YTDL] Youtube relatedVideo Requset. - " + id);
 
-    gety(options, (data) => {
-        console.log("[API] Req Success.");
-        console.log(data);
-        return callback(data);
-    });
+    let data_temp = await ytdl.getBasicInfo("https://youtu.be/" + id);
+    console.log(data_temp);
+
+
+    console.log("[YTDL] Req Success.");
+    console.log(data_temp["related_videos"]);
+    return callback(data_temp["related_videos"]);
 }
 
 function gety (option, callback) {

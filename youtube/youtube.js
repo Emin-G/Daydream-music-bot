@@ -33,10 +33,32 @@ async function getVideo (id, callback) {
     return callback(data);
 }
 
+<<<<<<< HEAD
 async function getPlaylist (id, callback) {
     console.log("[YTPL] Youtube getPlaylist Requset. - " + id);
 
     let playlist;
+=======
+function getPlaylist (id, callback) {
+    console.log("[API] Youtube getPlaylist Requset. - " + id);
+    let playlist = new Map();
+    let unter = 0;
+    let options;
+    function multi_page (nextPageToken) {
+        if (!nextPageToken) {
+            options = {
+                host: "youtube.googleapis.com",
+                path: encodeURI("/youtube/v3/playlistItems?part=snippet&fields=nextPageToken,items(snippet(title,resourceId(videoId)))&maxResults=50&playlistId=" + id + "&key=" + process.env.YOUTUBE_API)
+            }
+        }
+
+        else {
+            options = {
+                host: "youtube.googleapis.com",
+                path: encodeURI("/youtube/v3/playlistItems?part=snippet&fields=nextPageToken,items(snippet(title,resourceId(videoId)))&maxResults=50&pageToken=" + nextPageToken + "&playlistId=" + id + "&key=" + process.env.YOUTUBE_API)
+            }
+        }
+>>>>>>> 9e078131a860e37a15e7a9c741bd64d7396980e3
 
     try {
         playlist = await ytpl(id);

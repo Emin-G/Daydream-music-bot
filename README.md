@@ -1,10 +1,12 @@
 #  Daydream Preview
 
 <p align="center">
-<img src="https://cdn.discordapp.com/attachments/807077862880444456/1002493944522870864/alice_beta_profile.png" alt="Daydream" width="40%">
+<img src="https://cdn.discordapp.com/attachments/807077862880444456/1002493944522870864/alice_beta_profile.png" alt="Daydream" width="30%">
 </p>
 
-> 심플한 한국어 기반 디스코드 뮤직 봇
+<pre align="center">
+심플한 한국어 기반 디스코드 뮤직 봇
+</pre>
 
 ## 🎉 1.1 업데이트
 

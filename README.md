@@ -1,7 +1,7 @@
 #  Daydream Preview
 
 <p align="center">
-<img src="https://cdn.discordapp.com/attachments/807077862880444456/1002493944522870864/alice_beta_profile.png" alt="Daydream" width="30%">
+<img src="https://cdn.discordapp.com/attachments/807077862880444456/1043182854147948584/maid.png" alt="Daydream" width="30%">
 </p>
 
 <pre align="center">

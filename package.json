@@ -1,14 +1,14 @@
 {
   "name": "daydream",
   "displayName": "Daydream Preview",
-  "version": "1.1.1",
+  "version": "2.0.0",
   "description": "심플한 한국어 기반 디스코드 뮤직 봇",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
-    "node": "16.x"
+    "node": "18.x"
   },
   "author": "Emin_G",
   "license": "MIT",
@@ -20,11 +20,10 @@
     "url": "https://github.com/Emin-G/Daydream-music-bot/issues"
   },
   "dependencies": {
-    "@discordjs/opus": "^0.8.0",
-    "@discordjs/voice": "^0.10.0",
-    "discord.js": "^13.8.1",
-    "dotenv": "^16.0.1",
-    "https": "^1.0.0",
+    "@discordjs/opus": "^0.9.0",
+    "@discordjs/voice": "^0.14.0",
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3",
     "tweetnacl": "^1.0.3",
     "ytdl-core": "^4.11.2",
     "ytpl": "^2.3.0"

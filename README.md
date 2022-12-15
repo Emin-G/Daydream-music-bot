@@ -8,12 +8,12 @@
 심플한 한국어 기반 디스코드 뮤직 봇
 </pre>
 
-## 🎉 1.1 업데이트
+## 🎉 2.0 업데이트
 
- - !재생 잘못된 URL 에러 핸들링
- - 유튜브 API 의존도 대폭 감소 (검색을 제외한 모든 기능 유튜브 API 사용하지 않음)
- - 기능 최적화
- - 버전 체크 추가
+ - Node.js 버전 업데이트 (16.x -> 18.x)
+ - Discord.js 버전 업데이트 (v13 -> v14)
+ - 슬래쉬 커맨드로 변경 (!재생 -> /재생)
+ - 코드 파일 분할
 
 ## **기능**
  - [재생](#재생)
@@ -29,20 +29,21 @@
  - 일시정지
  - 스테이션 기능 정확도 향상
  - 에러 핸들링
+ - Quick Start Guide
 
 콘솔 로그가 ~~존123나~~ 많으므로 마음의 준비를...
 
 ## 설치
 
-Node.js 16.x 버전 필요
+Node.js 18.x 버전 필요
 
  1. `git clone https://github.com/Emin-G/Daydream-music-bot.git`
  2. `cd Daydream-music-bot/`
  3. `npm install`
 
-사용 전 .env 파일의  BOT_TOKEN=  과  YOUTUBE_API=  를 수정해 주세요.
+사용 전 .env 파일의  BOT_TOKEN=  과  YOUTUBE_API= , CLIENT_ID=  를 수정해 주세요.
 
-FFMPEG 설치가 필요합니다.
+**FFMPEG 설치가 필요합니다.**
 
 ## 재생
 > !재생 [옵션]

@@ -7,7 +7,7 @@ vm.chkVersion();
 
 require("dotenv").config();
 
-const bot = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildVoiceStates] });
+const bot = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent, GatewayIntentBits.GuildVoiceStates] });
 
 bot.on("warn", console.warn);
 bot.on("error", console.error);

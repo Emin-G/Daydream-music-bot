@@ -191,7 +191,7 @@
 
 ---
 
-### 6. MESSAGE CONTENT INTENT를 키고 Save Changes를 누르세요.
+### 6. 아래로 내려 MESSAGE CONTENT INTENT를 키고 Save Changes를 누르세요.
 > <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064565089396600862/Screenshot_2023-01-17_002055.png"  alt="Discord Developers Center"  width="100%">
 
 ---

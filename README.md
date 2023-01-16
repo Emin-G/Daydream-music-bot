@@ -191,22 +191,27 @@
 
 ---
 
-### 6. Reset Token을 누르세요.
+### 6. MESSAGE CONTENT INTENT를 키고 Save Changes를 누르세요.
+> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064565089396600862/Screenshot_2023-01-17_002055.png"  alt="Discord Developers Center"  width="100%">
+
+---
+
+### 7. Reset Token을 누르세요.
 > <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064540872269635626/Screenshot_2023-01-16_224409.png"  alt="Discord Developers Center"  width="100%">
 
 ---
 
-### 7. 저스트 뚜잇!
+### 8. 저스트 뚜잇!
 > <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064541267649888307/Screenshot_2023-01-16_224624.png"  alt="Discord Developers Center"  width="100%">
 
 ---
 
-### 8. Copy를 누르세요.
+### 9. Copy를 누르세요.
 > <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064542707214712912/Screenshot_2023-01-16_225116.png"  alt="Discord Developers Center"  width="100%">
 
 ---
 
-### 9. 설치했던 Daydream 폴더 안의 .env 파일을 메모장으로 열어주세요.
+### 10. 설치했던 Daydream 폴더 안의 .env 파일을 메모장으로 열어주세요.
 > <img src="https://cdn.discordapp.com/attachments/807077862880444456/1064546247190511686/image.png"  alt="Discord Developers Center"  width="20%">
 > <img src="https://cdn.discordapp.com/attachments/807077862880444456/1064545854603657267/2023-01-16_214925_plus_alpha_beta.png"  alt="Discord Developers Center"  width="50%">
 > 
@@ -215,29 +220,29 @@
 
 ---
 
-### 10. BOT_TOKEN= 옆에 붙여넣어주세요.
+### 11. BOT_TOKEN= 옆에 붙여넣어주세요.
 > (ex. BOT_TOKEN=NaWET12549bl=ewtIOLEIBTOLEBNRon3e)
 > 옆에 저건 그냥 막친거임니다.
 
 ---
 
-### 11. Oauth2를 누르고 Copy를 누르세요.
+### 12. Oauth2를 누르고 Copy를 누르세요.
 > <img src="https://cdn.discordapp.com/attachments/807077862880444456/1064550390701498458/Screenshot_2023-01-16_232149.png"  alt="Discord Developers Center"  width="100%">
 
 ---
 
-### 12. CLIENT_ID= 옆에 붙여넣어주세요.
+### 13. CLIENT_ID= 옆에 붙여넣어주세요.
 > (ex. CLIENT_ID=123456789)
 > 옆에 저건 그냥 막친거임니다.
 
 ---
 
-### 13. URL Generator를 누르고 Bot을 체크하세요.
+### 14. URL Generator를 누르고 Bot을 체크하세요.
 > <img src="https://cdn.discordapp.com/attachments/807077862880444456/1064551452594417714/Screenshot_2023-01-16_232642.png"  alt="Discord Developers Center"  width="100%">
 
 ---
 
-### 14. 아래와 같이 체크하고 Copy를 누르세요.
+### 15. 아래와 같이 체크하고 Copy를 누르세요.
 > <img src="https://cdn.discordapp.com/attachments/807077862880444456/1064552830830116955/Screenshot_2023-01-16_233035.png"  alt="Discord Developers Center"  width="100%">
 > 
 > 추천하지는 않지만 Administrator (관리자 권한) 을 체크하면 나머지는 체크하지 않아도 됩니다.
@@ -245,7 +250,7 @@
 
 ---
 
-### 15. 브라우저에서 복사했던 링크를 열고 봇을 서버에 초대하세요.
+### 16. 브라우저에서 복사했던 링크를 열고 봇을 서버에 초대하세요.
 한 번 발급한 링크는 영구적으로 사용이 가능하니
 추후에 다른 서버에도 봇을 추가해야한다면 링크를 어따가 잘 챙겨놓으세요.
 

@@ -104,7 +104,7 @@
 ---
 
 ### 7. 새로 만들기를 누르고 복사 했던 값을 붙여넣고 확인을 누르세요.
-> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064532231026126869/Screenshot_2023-01-16_220925.png"  alt="Edit environment variable"  width="100%">
+> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064719890826665996/Screenshot_2023-01-17_103517.png"  alt="Edit environment variable"  width="100%">
 > 다시 한번
 
 ---
@@ -123,7 +123,7 @@
 > 
 > 우치노 개발자가 고맨.
 > 
-> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064718620489425036/Screenshot_2023-01-17_103102.png"  alt="cmd"  width="100%">
+> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064718620489425036/Screenshot_2023-01-17_103102.png"  alt="cmd"  width="80%">
 > 오류가 나지 않는다면 성공.
 
 ## FFmpeg

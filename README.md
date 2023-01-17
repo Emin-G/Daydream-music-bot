@@ -123,7 +123,7 @@
 > 
 > 우치노 개발자가 고맨.
 > 
-> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064718620489425036/Screenshot_2023-01-17_103102.png"  alt="cmd"  width="80%">
+> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064718620489425036/Screenshot_2023-01-17_103102.png"  alt="cmd"  width="100%">
 > 오류가 나지 않는다면 성공.
 
 ## FFmpeg

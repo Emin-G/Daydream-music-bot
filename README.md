@@ -104,7 +104,7 @@
 ---
 
 ### 7. 새로 만들기를 누르고 복사 했던 값을 붙여넣고 확인을 누르세요.
-> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064719890826665996/Screenshot_2023-01-17_103517.png"  alt="Edit environment variable"  width="100%">
+> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064719890826665996/Screenshot_2023-01-17_103517.png"  alt="Edit environment variable"  width="80%">
 > 다시 한번
 
 ---
@@ -193,7 +193,7 @@
 ---
 
 ### 10. 새로 만들기를 누르고 복사 했던 값을 붙여넣고 확인을 누르세요.
-> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064532231026126869/Screenshot_2023-01-16_220925.png"  alt="Edit environment variable"  width="100%">
+> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064532231026126869/Screenshot_2023-01-16_220925.png"  alt="Edit environment variable"  width="80%">
 > 다시 한번
 
 ---

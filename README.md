@@ -55,13 +55,76 @@
 ---
 
 ### 2. Node.js를 설치해주세요.
-다음 동의 다음 다음 다음 하면 됩니다.
+다음 동의 다음 하면 됩니다.
+
+---
+
+### 3. 설치 위치를 복사해주세요.
+> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064717181331447808/Screenshot_2023-01-17_102436.png"  alt="Node.js Setup"  width="100%">
+> 
+> 핑크색 박스 부분을 쭉 드래그하고 문자 전체를 복사해주세요.
+> 
 > <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064558803527417956/Screenshot_2023-01-16_235558.png"  alt="Node.js Setup"  width="80%">
 > 
 > 넘기다 보면 이 옵션이 있는데 체크 안 해도 Daydream을 사용하는데 지장은 없으나
 > 다른 봇들도 사용해 볼 예정이거나 봇을 개발해 볼 예정이거나
 > 시간적 여유와 매우 널널한 저장 공간의 소유자라면
 > 설치 **매우 추천**
+
+---
+
+### 4. 시스템 환경 변수 편집을 검색하세요.
+> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064527944514551818/2023-01-16_214925.png"  alt="Taskbar Search"  width="40%">
+> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064528349705277440/2023-01-16_214925_plus.png"  alt="Search environment"  width="100%">
+> 
+> 와타시의 윈도우 설치 언어가 영어라서 저따구로 나온겁니다.
+> 
+> 걱정 말고 시스템 환경 변수 편집을 실행하세요.
+> 
+> 우치노 개발자가 고맨나사이.
+
+---
+
+### 5. 환경 변수를 누르세요.
+> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064529855217143859/Screenshot_2023-01-16_215943.png"  alt="System Properties"  width="50%">
+> 
+> 다시 한번 말하지만 와타시의 윈도우 설치 언어가 영어라서 저따구로 나온겁니다.
+> 
+> 한국어로 환경 변수라고 써져있습니다. 걱정 말고 누르세요.
+> 
+> 우치노 개발자가 고맨나사이.
+
+---
+
+### 6. Path를 누르고 편집을 누르세요.
+> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064531313547296879/Screenshot_2023-01-16_220408.png"  alt="Environment variables"  width="100%">
+> 
+> 다시 한번 말하지만
+
+---
+
+### 7. 새로 만들기를 누르고 복사 했던 값을 붙여넣고 확인을 누르세요.
+> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064532231026126869/Screenshot_2023-01-16_220925.png"  alt="Edit environment variable"  width="100%">
+> 다시 한번
+
+---
+
+### 8. 확인 > 적용 > 확인을 눌러 모든 창을 닫으세요.
+
+---
+
+### end. cmd를 열고 `node -v` 를 입력해서 설치가 잘 되었는지 확인합니다.
+> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064527944514551818/2023-01-16_214925.png"  alt="Taskbar Search"  width="40%">
+> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064534441923444766/2023-01-16_214925_plus_alpha.png"  alt="Search cmd"  width="100%">
+> 
+> 매우 자주 말하지만 와타시의 윈도우 설치 언어가 영어라서 저따구로 나온겁니다.
+> 
+> 한국어로는 명령 프롬프트입니다.
+> 
+> 우치노 개발자가 고맨.
+> 
+> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064718620489425036/Screenshot_2023-01-17_103102.png"  alt="cmd"  width="100%">
+> 오류가 나지 않는다면 성공.
 
 ## FFmpeg
 - https://github.com/BtbN/FFmpeg-Builds/releases

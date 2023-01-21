@@ -53,6 +53,7 @@ module.exports = {
                 const staemb = new EmbedBuilder()
                 .setColor("#0x7d3640")
                 .setTitle(":repeat:  **|**  반복 기능이 활성화 되었습니다!")
+		.setDescription("반복 기능을 사용하는 중에는 재생 알림이 표시되지 않습니다.")
                 message.reply({ embeds: [staemb] });
             }
 

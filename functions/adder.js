@@ -15,7 +15,7 @@ async function adder (message, title, id, isList) {
 
     if (!connection[message.guild.id] || await getVoiceConnection(message.guild.id)._state.status !== "ready" && await getVoiceConnection(message.guild.id)._state.status !== "signalling") {
         cleanup(message.guild.id);
-        connection[message.guild.id] = await joinVoiceChannel({
+        connection[message.guild.id] = joinVoiceChannel({
             channelId: message.member.voice.channel.id,
             guildId: message.guild.id,
             adapterCreator: message.guild.voiceAdapterCreator,

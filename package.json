@@ -1,12 +1,9 @@
 {
   "name": "daydream",
   "displayName": "Daydream Preview",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "심플한 한국어 기반 디스코드 뮤직 봇",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "engines": {
     "node": "18.x"
   },

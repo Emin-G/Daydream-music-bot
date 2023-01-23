@@ -45,8 +45,6 @@ async function play (message, title, id) {
         return skiper(message, 0, () => {
         });
     });
-
-    if (station[message.guild.id] === "repeat") return;
     
     let playemb = new EmbedBuilder()
     .setColor("#0x7d3640")

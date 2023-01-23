@@ -57,6 +57,8 @@ regico();
 bot.on(Events.InteractionCreate, async (interaction) => {
 	if (!interaction.isChatInputCommand()) return;
 
+    console.log(bot.application.commands);
+
 	const command = bot.commands.get(interaction.commandName);
 
 	if (!command) {

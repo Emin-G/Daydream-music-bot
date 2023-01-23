@@ -1,9 +1,16 @@
 {
   "name": "daydream",
   "displayName": "Daydream Preview",
+<<<<<<< HEAD
   "version": "2.1.1",
+=======
+  "version": "2.0.0",
+>>>>>>> parent of a5d226c (Update - Remove alert during repeat playback)
   "description": "심플한 한국어 기반 디스코드 뮤직 봇",
   "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "engines": {
     "node": "18.x"
   },

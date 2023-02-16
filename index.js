@@ -22,7 +22,7 @@ bot.on("ready", () => {
 
 //Coomand
 bot.commands = new Collection();
-const config = ["play", "playlist", "repeat", "skip", "station", "stop", "volume"];
+const config = ["play", "playlist", "repeat", "shuffle", "skip", "station", "stop", "volume"];
 const commands = [];
 
 const rest = new REST({ version: "10" }).setToken(process.env.BOT_TOKEN);

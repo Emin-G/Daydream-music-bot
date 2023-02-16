@@ -71,7 +71,7 @@ bot.on(Events.InteractionCreate, async (interaction) => {
         const errtemb = new EmbedBuilder()
         .setColor("#0x7d3640")
         .setTitle(":triangular_flag_on_post:  **|**  콜라를 옮기다가 떨어뜨려버렸어요!...")
-        return message.reply({ embeds: [errtemb] });
+        return interaction.reply({ embeds: [errtemb] });
 	}
 });
 //Event

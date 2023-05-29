@@ -37,7 +37,7 @@ module.exports = {
 
             skiper(message, val, () => {
                 const skiemb = new EmbedBuilder()
-                .setColor("#0x7d3640")
+                .setColor("#7d3640")
                 .setTitle(":track_next:  **|**  스킵되었습니다!")
                 .setDescription("`" + temp_tilt.title + "`")
                 .setThumbnail("https://img.youtube.com/vi/" + temp_tilt.id + "/mqdefault.jpg")

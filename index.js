@@ -20,6 +20,10 @@ bot.on("ready", () => {
     });
 });
 
+process.on("unhandledRejection", (error) => {
+    console.error("Unhandled promise rejection : ", error);
+});
+
 //Coomand
 bot.commands = new Collection();
 const config = ["play", "playlist", "repeat", "shuffle", "skip", "station", "stop", "volume"];
@@ -69,7 +73,7 @@ bot.on(Events.InteractionCreate, async (interaction) => {
 	} catch (error) {
 		console.error(error);
         const errtemb = new EmbedBuilder()
-        .setColor("#0x7d3640")
+        .setColor("#7d3640")
         .setTitle(":triangular_flag_on_post:  **|**  콜라를 옮기다가 떨어뜨려버렸어요!...")
         return interaction.reply({ embeds: [errtemb] });
 	}

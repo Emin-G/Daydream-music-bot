@@ -27,7 +27,7 @@ function chkVersion () {
     function gety (option, callback) {
 
         https.get(option, function(res) {
-            var rse = "";
+            let rse = "";
             res.on("data", function(chunk) {
                 rse += chunk;
             });

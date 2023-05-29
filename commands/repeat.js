@@ -29,7 +29,7 @@ module.exports = {
             if (station[message.guild.id] === "repeat") {
                 station[message.guild.id] = false;
                 const staemb = new EmbedBuilder()
-                .setColor("#0x7d3640")
+                .setColor("#7d3640")
                 .setTitle(":negative_squared_cross_mark:  **|**  반복 기능이 해제 되었습니다!")
                 message.reply({ embeds: [staemb] });
             }
@@ -39,7 +39,7 @@ module.exports = {
             else {
                 station[message.guild.id] = "repeat";
                 const staemb = new EmbedBuilder()
-                .setColor("#0x7d3640")
+                .setColor("#7d3640")
                 .setTitle(":repeat:  **|**  반복 기능이 활성화 되었습니다!")
                 .setDescription("반복 기능을 사용하는 중에는 재생 알림이 표시되지 않습니다.")
                 message.reply({ embeds: [staemb] });
@@ -51,7 +51,7 @@ module.exports = {
                 if (station[message.guild.id] === "repeat") return erremb(message, ":triangular_flag_on_post:  **|**  반복 기능이 이미 활성화 되어있습니다!", "반복을 종료하려면 반복 끄기를 입력해주세요.");
                 station[message.guild.id] = "repeat";
                 const staemb = new EmbedBuilder()
-                .setColor("#0x7d3640")
+                .setColor("#7d3640")
                 .setTitle(":repeat:  **|**  반복 기능이 활성화 되었습니다!")
                 .setDescription("반복 기능을 사용하는 중에는 재생 알림이 표시되지 않습니다.")
                 message.reply({ embeds: [staemb] });
@@ -61,7 +61,7 @@ module.exports = {
                 if (!station[message.guild.id]) return erremb(message, ":triangular_flag_on_post:  **|**  반복 기능이 아직 활성화 되지 않았습니다!", "반복을 시작하려면 반복 켜기를 입력해주세요.");
                 station[message.guild.id] = false;
                 const staemb = new EmbedBuilder()
-                .setColor("#0x7d3640")
+                .setColor("#7d3640")
                 .setTitle(":negative_squared_cross_mark:  **|**  반복 기능이 해제 되었습니다!")
                 message.reply({ embeds: [staemb] });
             }

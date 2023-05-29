@@ -26,14 +26,14 @@ module.exports = {
             volume[message.guild.id] = parseInt(val) / 100;
             resource[message.guild.id].volume.setVolume(volume[message.guild.id]);
             const volemb = new EmbedBuilder()
-            .setColor("#0x7d3640")
+            .setColor("#7d3640")
             .setTitle(":loud_sound:  **|**  볼륨을 `" + parseInt(val) + "%` 으로 설정했습니다!")
             return message.reply({ embeds: [volemb] });
         }
 
         else if (!val) {
             const volemb = new EmbedBuilder()
-            .setColor("#0x7d3640")
+            .setColor("#7d3640")
             .setTitle(":loud_sound:  **|**  현재 볼륨은 `" + (volume[message.guild.id] * 100) + "%` 입니다!")
             return message.reply({ embeds: [volemb] });
         }

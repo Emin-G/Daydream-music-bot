@@ -19,7 +19,7 @@ module.exports = {
         cleanup(message.guild.id);
 
         const stemb = new EmbedBuilder()
-        .setColor("#0x7d3640")
+        .setColor("#7d3640")
         .setTitle(":stop_button:  **|**  노래 재생을 멈췄습니다!")
         return message.reply({ embeds: [stemb] });
         

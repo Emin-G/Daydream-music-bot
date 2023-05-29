@@ -103,7 +103,7 @@ module.exports = {
                         }
     
                         const listemb = new EmbedBuilder()
-                        .setColor("#0x7d3640")
+                        .setColor("#7d3640")
                         .setTitle(":white_check_mark:  **|**  재생목록에 추가했습니다!")
                         .setDescription(res)
                         .setThumbnail("https://img.youtube.com/vi/" + list[0].id + "/mqdefault.jpg")
@@ -137,8 +137,10 @@ module.exports = {
                     res += "**`" + (parseInt(unter) + 1) + "`** | " + videos[unter].snippet.title + "\n";
                 }
 
+                if (!res) return erremb(message, ":triangular_flag_on_post:  **|**  곡을 찾지 못했습니다...", "검색어를 변형하여 다시 한번 입력해보세요!");
+
                 let src = new EmbedBuilder()
-                .setColor("#0x7d3640")
+                .setColor("#7d3640")
                 .setAuthor({ name: "검색 결과", iconURL: message.user.displayAvatarURL() })
                 .setDescription(res)
                 .setFooter({ text: "트랙 번호만 입력하시거나 취소하시려면  `취소`  라고 입력해 주세요." })
@@ -152,15 +154,18 @@ module.exports = {
                         response = response.first();
                         if (response.content === "취소") {
                             message.deleteReply();
+                            response.delete();
                             return norpembed(message, ":triangular_flag_on_post:  **|**  곡 선택이 취소되었습니다!", "출입 도어가 닫힙니다.");
                         }
                         if (parseInt(response.content) > 0 && parseInt(response.content) < 11) {
                             message.deleteReply();
+                            response.delete();
                             response.content = parseInt(response.content) - 1;
                             return adder(interaction, videos[response.content].snippet.title, videos[response.content].id.videoId, false);
                         }
                         else {
                             message.deleteReply();
+                            response.delete();
                             return norpembed(message, ":triangular_flag_on_post:  **|**  곡 선택이 취소되었습니다!", "올바르지 않은 수가 입력되었습니다. 1 ~ 10 안으로 선택 해주세요.");
                         }
                     }).catch((err) => {

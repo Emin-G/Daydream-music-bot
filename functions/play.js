@@ -49,7 +49,7 @@ async function play (message, title, id) {
     if (station[message.guild.id] === "repeat") return;
     
     let playemb = new EmbedBuilder()
-    .setColor("#0x7d3640")
+    .setColor("#7d3640")
     .setImage("https://img.youtube.com/vi/" + id + "/mqdefault.jpg");
 
     if (!station[message.guild.id]) playemb.setTitle(":notes:  **|**  " + title);

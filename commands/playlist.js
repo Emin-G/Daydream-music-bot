@@ -25,7 +25,7 @@ module.exports = {
         }
 
         const plistemb = new EmbedBuilder()
-        .setColor("#0x7d3640")
+        .setColor("#7d3640")
         .setTitle(":bookmark:  **|**  재생 목록")
         .setDescription(res)
         .setThumbnail("https://img.youtube.com/vi/" + playlist[message.guild.id][0]["id"] + "/mqdefault.jpg")

@@ -1,7 +1,7 @@
 const { EmbedBuilder } = require("discord.js");
 const { joinVoiceChannel, VoiceConnectionStatus, getVoiceConnection } = require("@discordjs/voice");
 
-const { erremb } = require("../util/embed.js");
+const { erremb, norpembed } = require("../util/embed.js");
 
 const { cleanup } = require("../functions/cleanup.js");
 const { handler } = require("../functions/handler.js");
@@ -12,6 +12,8 @@ async function adder (message, title, id, isList) {
 
     //Connection
     if (!isList) console.log(getVoiceConnection(message.guild.id));
+
+    if (!message.member.voice.channel) return norpembed(message, ":triangular_flag_on_post:  **|**  통화방을 찾지 못했습니다!", "먼저 통화방에 들어가거나 권한을 확인해주세요.");
 
     if (!connection[message.guild.id] || await getVoiceConnection(message.guild.id)._state.status !== "ready" && await getVoiceConnection(message.guild.id)._state.status !== "signalling") {
         cleanup(message.guild.id);
@@ -45,7 +47,7 @@ async function adder (message, title, id, isList) {
         if (isList) return;
 
         const adderemb = new EmbedBuilder()
-        .setColor("#0x7d3640")
+        .setColor("#7d3640")
         .setTitle(":white_check_mark:  **|**  재생목록에 추가했습니다!")
         .setDescription("`" + title + "`")
         .setThumbnail("https://img.youtube.com/vi/" + id + "/mqdefault.jpg")

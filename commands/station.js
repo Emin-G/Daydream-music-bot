@@ -31,7 +31,7 @@ module.exports = {
             if (station[message.guild.id]) {
                 station[message.guild.id] = false;
                 const staemb = new EmbedBuilder()
-                .setColor("#0x7d3640")
+                .setColor("#7d3640")
                 .setTitle(":negative_squared_cross_mark:  **|**  스테이션 기능이 해제 되었습니다!")
                 message.reply({ embeds: [staemb] });
             }
@@ -41,7 +41,7 @@ module.exports = {
             else {
                 station[message.guild.id] = "on";
                 const staemb = new EmbedBuilder()
-                .setColor("#0x7d3640")
+                .setColor("#7d3640")
                 .setTitle(":fire:  **|**  스테이션 기능이 활성화 되었습니다!")
                 message.reply({ embeds: [staemb] });
             }
@@ -52,7 +52,7 @@ module.exports = {
                 if (station[message.guild.id] === "on") return erremb(message, ":triangular_flag_on_post:  **|**  스테이션 기능이 이미 활성화 되어있습니다!", "스테이션을 종료하려면 스테이션 끄기를 입력해주세요.");
                 station[message.guild.id] = "on";
                 const staemb = new EmbedBuilder()
-                .setColor("#0x7d3640")
+                .setColor("#7d3640")
                 .setTitle(":fire:  **|**  스테이션 기능이 활성화 되었습니다!")
                 message.reply({ embeds: [staemb] });
             }
@@ -61,7 +61,7 @@ module.exports = {
                 if (!station[message.guild.id]) return erremb(message, ":triangular_flag_on_post:  **|**  스테이션 기능이 아직 활성화 되지 않았습니다!", "스테이션을 시작하려면 스테이션 켜기를 입력해주세요.");
                 station[message.guild.id] = false;
                 const staemb = new EmbedBuilder()
-                .setColor("#0x7d3640")
+                .setColor("#7d3640")
                 .setTitle(":negative_squared_cross_mark:  **|**  스테이션 기능이 해제 되었습니다!")
                 message.reply({ embeds: [staemb] });
             }
@@ -70,7 +70,7 @@ module.exports = {
                 if (!station[message.guild.id]) return erremb(message, ":triangular_flag_on_post:  **|**  스테이션 기능이 아직 활성화 되지 않았습니다!", "스테이션을 시작하려면 스테이션 켜기를 입력해주세요.");
                 stat_handler(message, message.guild.id);
                 const staemb = new EmbedBuilder()
-                .setColor("#0x7d3640")
+                .setColor("#7d3640")
                 .setTitle(":fire: :track_next:  **|**  스테이션 곡이 스킵 되었습니다!")
                 message.reply({ embeds: [staemb] });
             }

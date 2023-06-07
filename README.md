@@ -1,12 +1,22 @@
 #  Daydream Preview
 
 <p align="center">
-<img  src="https://cdn.discordapp.com/attachments/807077862880444456/1043182854147948584/maid.png"  alt="Daydream"  width="30%">
+	<img src="https://cdn.discordapp.com/attachments/807077862880444456/1043182854147948584/maid.png"  alt="Daydream"  width="30%">
 </p>
 
 <pre align="center">
 심플한 한국어 기반 디스코드 뮤직 봇
 </pre>
+
+## Daydream 기반의 봇 유피를 만나보세요!
+
+<p align="center">
+	<img src="https://cdn.discordapp.com/attachments/807077862880444456/1116024784011145247/yupi.png"  alt="Yupi"  width="30%">
+</p>
+
+ - 만나서 반가워, 유피랑 대화할래? - 새로운 세대의 디스코드 봇 유피를 소개합니다! 어디서도 경험하지 못했던 새로운 대화를 시작해보세요.
+ 
+[유피 홈페이지 가기](https://yupi.arite.studio/)
 
 ## v.2.3.0 업데이트
 - 채팅방이 더욱 깔끔해졌어요. (유저가 입력한 메세지 삭제 강화)

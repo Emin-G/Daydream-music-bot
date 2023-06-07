@@ -159,8 +159,8 @@ module.exports = {
                         }
                         if (parseInt(response.content) > 0 && parseInt(response.content) < 11) {
                             message.deleteReply();
-                            response.delete();
                             response.content = parseInt(response.content) - 1;
+                            response.delete();
                             return adder(interaction, videos[response.content].snippet.title, videos[response.content].id.videoId, false);
                         }
                         else {

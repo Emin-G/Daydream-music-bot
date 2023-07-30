@@ -1,5 +1,6 @@
-#  Daydream Preview
+<img src="https://cdn.discordapp.com/attachments/807077862880444456/1135203605218078760/Daydream_Pamplet.png" alt="DaydreamThumb" width="100%">
 
+#  Daydream Preview
 <p align="center">
 	<img src="https://cdn.discordapp.com/attachments/807077862880444456/1043182854147948584/maid.png"  alt="Daydream"  width="30%">
 </p>
@@ -8,15 +9,40 @@
 심플한 한국어 기반 디스코드 뮤직 봇
 </pre>
 
-## Daydream 기반의 봇 유피를 만나보세요!
+---
+
+<div align="center">
+<img src="https://cdn.discordapp.com/attachments/807077862880444456/1135223090041847908/stellar4.png" width="60%">
+</div>
 
 <p align="center">
-	<img src="https://cdn.discordapp.com/attachments/807077862880444456/1116024784011145247/yupi.png"  alt="Yupi"  width="30%">
+Daydream은 심플하고 직관적인 디자인과
+</p>
+<p align="center">
+누구나 빠르게 명령어를 사용할 수 있는 간단함을 목표로 개발되고 있습니다.
 </p>
 
- - 만나서 반가워, 유피랑 대화할래? - 새로운 세대의 디스코드 봇 유피를 소개합니다! 어디서도 경험하지 못했던 새로운 대화를 시작해보세요.
- 
-[유피 홈페이지 가기](https://yupi.arite.studio/)
+ - 영상 출처 - 공룡 @rulrudino
+ - https://youtu.be/Mh02Uv39mQI
+ - https://youtu.be/42e7hyTiKUE
+ - **☆☆☆24시간 스트리밍 및 롤모델 삼기 환영 중(아마)☆☆☆**
+
+---
+
+<div align="center">
+<a href="https://github.com/Emin-G/StellarLoom">
+<img src="https://cdn.discordapp.com/attachments/807077862880444456/1135196540319842324/StellarLoom_Pamplet-min.png" alt="StellarLoom" width="45%">
+</a>
+<a href="https://yupi.arite.studio/">
+<img src="https://cdn.discordapp.com/attachments/807077862880444456/1135205794619605122/Yupi_Pamplet.png" alt="Yupi" width="45%">
+</div>
+</a>
+<p align="center">
+큰 규모의 봇 혹은 더욱 안정적인 뮤직봇이 필요하다면 StellarLoom 프로젝트를 참고해주세요.
+</p>
+<p align="center">
+Daydream, StellarLoom 프로젝트를 체험해보고 싶다면 유피를 서버에 초대해보세요!
+</p>
 
 ## v.2.3.0 업데이트
 - 채팅방이 더욱 깔끔해졌어요. (유저가 입력한 메세지 삭제 강화)

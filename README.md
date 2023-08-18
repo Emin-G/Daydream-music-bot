@@ -355,10 +355,7 @@ Daydream, StellarLoom 프로젝트를 체험해보고 싶다면 유피를 서버
 ---
 
 ### 15. 아래와 같이 체크하고 Copy를 누르세요.
-> <img src="https://cdn.discordapp.com/attachments/807077862880444456/1064552830830116955/Screenshot_2023-01-16_233035.png"  alt="Discord Developers Center"  width="100%">
-> 
-> 추천하지는 않지만 Administrator (관리자 권한) 을 체크하면 나머지는 체크하지 않아도 됩니다.
-> 관리자 권한을 봇에게 주고 싶다면 Administrator (관리자 권한) 만 체크하세요.
+> <img src="https://cdn.discordapp.com/attachments/807077862880444456/1141991946735333387/image.png"  alt="Discord Developers Center"  width="100%">
 
 ---
 

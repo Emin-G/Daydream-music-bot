@@ -1,8 +1,8 @@
-<img src="https://cdn.discordapp.com/attachments/807077862880444456/1135203605218078760/Daydream_Pamplet.png" alt="DaydreamThumb" width="100%">
+<img src="https://github.com/Emin-G/Img/blob/main/Daydream_Pamplet.png?raw=true" alt="DaydreamThumb" width="100%">
 
 #  Daydream Preview
 <p align="center">
-	<img src="https://cdn.discordapp.com/attachments/807077862880444456/1043182854147948584/maid.png"  alt="Daydream"  width="30%">
+	<img src="https://github.com/Emin-G/Img/blob/main/maid.png?raw=true"  alt="Daydream"  width="30%">
 </p>
 
 <pre align="center">
@@ -13,7 +13,7 @@
 ---
 
 <div align="center">
-<img src="https://cdn.discordapp.com/attachments/807077862880444456/1135223090041847908/stellar4.png" width="60%">
+<img src="https://github.com/Emin-G/Img/blob/main/stellar4.png?raw=true" width="60%">
 </div>
 
 <p align="center">
@@ -35,10 +35,10 @@ Daydream은 심플하고 직관적인 디자인과
 
 <div align="center">
 <a href="https://github.com/Emin-G/StellarLoom">
-<img src="https://cdn.discordapp.com/attachments/807077862880444456/1135196540319842324/StellarLoom_Pamplet-min.png" alt="StellarLoom" width="45%">
+<img src="https://github.com/Emin-G/Img/blob/main/StellarLoom_Pamplet-min.png?raw=true" alt="StellarLoom" width="45%">
 </a>
 <a href="https://yupi.arite.studio/">
-<img src="https://cdn.discordapp.com/attachments/807077862880444456/1135205794619605122/Yupi_Pamplet.png" alt="Yupi" width="45%">
+<img src="https://github.com/Emin-G/Img/blob/main/Yupi_Pamplet.png?raw=true" alt="Yupi" width="45%">
 </div>
 </a>
 <p align="center">
@@ -62,6 +62,8 @@ Daydream, StellarLoom 프로젝트를 체험해보고 싶다면 유피를 서버
 - Discord.js 버전 업데이트 (v13 -> v14)
 - 슬래쉬 커맨드로 변경 (!재생 -> /재생)
 - 코드 파일 분할
+
+---
 
 ## **목차**
 ### **설치**
@@ -100,7 +102,7 @@ Daydream, StellarLoom 프로젝트를 체험해보고 싶다면 유피를 서버
 - https://nodejs.org/ko/download/
 
 ### 1. 위의 사이트에 접속하여 LTS 버전 (v.18.x) 의 Node.js 설치 파일을 다운로드 해주세요.
-> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064518387520241724/Screenshot_2023-01-16_211351.png"  alt="Node.js Download Page"  width="100%">
+> <img  src="https://github.com/Emin-G/Img/blob/main/daydream1.png?raw=true"  alt="Node.js Download Page"  width="100%">
 
 ---
 
@@ -110,11 +112,11 @@ Daydream, StellarLoom 프로젝트를 체험해보고 싶다면 유피를 서버
 ---
 
 ### 3. 설치 위치를 복사해주세요.
-> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064717181331447808/Screenshot_2023-01-17_102436.png"  alt="Node.js Setup"  width="100%">
+> <img  src="https://github.com/Emin-G/Img/blob/main/daydream3-1.png?raw=true"  alt="Node.js Setup"  width="100%">
 > 
 > 핑크색 박스 부분을 쭉 드래그하고 문자 전체를 복사해주세요.
 > 
-> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064558803527417956/Screenshot_2023-01-16_235558.png"  alt="Node.js Setup"  width="80%">
+> <img  src="https://github.com/Emin-G/Img/blob/main/daydream3-2.png?raw=true"  alt="Node.js Setup"  width="80%">
 > 
 > 넘기다 보면 이 옵션이 있는데 체크 안 해도 Daydream을 사용하는데 지장은 없으나
 > 다른 봇들도 사용해 볼 예정이거나 봇을 개발해 볼 예정이거나
@@ -124,8 +126,8 @@ Daydream, StellarLoom 프로젝트를 체험해보고 싶다면 유피를 서버
 ---
 
 ### 4. 시스템 환경 변수 편집을 검색하세요.
-> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064527944514551818/2023-01-16_214925.png"  alt="Taskbar Search"  width="40%">
-> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064528349705277440/2023-01-16_214925_plus.png"  alt="Search environment"  width="100%">
+> <img  src="https://github.com/Emin-G/Img/blob/main/daydream4-1.png?raw=true"  alt="Taskbar Search"  width="40%">
+> <img  src="https://github.com/Emin-G/Img/blob/main/daydream4-2.png?raw=true"  alt="Search environment"  width="100%">
 > 
 > 와타시의 윈도우 설치 언어가 영어라서 저따구로 나온겁니다.
 > 
@@ -136,7 +138,7 @@ Daydream, StellarLoom 프로젝트를 체험해보고 싶다면 유피를 서버
 ---
 
 ### 5. 환경 변수를 누르세요.
-> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064529855217143859/Screenshot_2023-01-16_215943.png"  alt="System Properties"  width="50%">
+> <img  src="https://github.com/Emin-G/Img/blob/main/daydream5.png?raw=true"  alt="System Properties"  width="50%">
 > 
 > 다시 한번 말하지만 와타시의 윈도우 설치 언어가 영어라서 저따구로 나온겁니다.
 > 
@@ -147,14 +149,14 @@ Daydream, StellarLoom 프로젝트를 체험해보고 싶다면 유피를 서버
 ---
 
 ### 6. Path를 누르고 편집을 누르세요.
-> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064531313547296879/Screenshot_2023-01-16_220408.png"  alt="Environment variables"  width="100%">
+> <img  src="https://github.com/Emin-G/Img/blob/main/daydream6.png?raw=true"  alt="Environment variables"  width="100%">
 > 
 > 다시 한번 말하지만
 
 ---
 
 ### 7. 새로 만들기를 누르고 복사 했던 값을 붙여넣고 확인을 누르세요.
-> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064719890826665996/Screenshot_2023-01-17_103517.png"  alt="Edit environment variable"  width="80%">
+> <img  src="https://github.com/Emin-G/Img/blob/main/daydream7.png?raw=true"  alt="Edit environment variable"  width="80%">
 > 다시 한번
 
 ---
@@ -164,8 +166,8 @@ Daydream, StellarLoom 프로젝트를 체험해보고 싶다면 유피를 서버
 ---
 
 ### end. cmd를 열고 `node -v` 를 입력해서 설치가 잘 되었는지 확인합니다.
-> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064527944514551818/2023-01-16_214925.png"  alt="Taskbar Search"  width="40%">
-> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064534441923444766/2023-01-16_214925_plus_alpha.png"  alt="Search cmd"  width="100%">
+> <img  src="https://github.com/Emin-G/Img/blob/main/daydreame-1.png?raw=true"  alt="Taskbar Search"  width="40%">
+> <img  src="https://github.com/Emin-G/Img/blob/main/daydreame-2.png?raw=true"  alt="Search cmd"  width="100%">
 > 
 > 매우 자주 말하지만 와타시의 윈도우 설치 언어가 영어라서 저따구로 나온겁니다.
 > 
@@ -173,14 +175,14 @@ Daydream, StellarLoom 프로젝트를 체험해보고 싶다면 유피를 서버
 > 
 > 우치노 개발자가 고맨.
 > 
-> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064718620489425036/Screenshot_2023-01-17_103102.png"  alt="cmd"  width="100%">
+> <img  src="https://github.com/Emin-G/Img/blob/main/daydreame-3.png?raw=true"  alt="cmd"  width="100%">
 > 오류가 나지 않는다면 성공.
 
 ## FFmpeg
 - https://github.com/BtbN/FFmpeg-Builds/releases
 
 ### 1. 위의 사이트에 접속하여 운영체제에 맞는 파일을 다운로드 해주세요.
-> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064519677902065694/Screenshot_2023-01-16_212012.png"  alt="FFmpeg Download Page"  width="100%">
+> <img  src="https://github.com/Emin-G/Img/blob/main/daydreamf1.png?raw=true"  alt="FFmpeg Download Page"  width="100%">
 > 윈도우 기준 핑크색 박스 안의 파일을 클릭하시면 됩니다.
 
 ---
@@ -191,14 +193,14 @@ Daydream, StellarLoom 프로젝트를 체험해보고 싶다면 유피를 서버
 
 ### 3. 폴더의 이름을 ffmpeg로 변경해주세요.
 > **!주의!**  |  폴더를 **한 번** 열면 바로 bin, doc과 같은 폴더가 보이도록 해주세요.
->  <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064521447395053678/image.png"  alt="FFmpeg Folder"  width="20%">
-> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064522295340716102/Screenshot_2023-01-16_213059.png"  alt="FFmpeg Folder"  width="50%">
+>  <img  src="https://github.com/Emin-G/Img/blob/main/daydreamf3-1.png?raw=true"  alt="FFmpeg Folder"  width="20%">
+> <img  src="https://github.com/Emin-G/Img/blob/main/daydreamf3-2.png?raw=true"  alt="FFmpeg Folder"  width="50%">
 
 ---
 
 ### 4. 압축을 푼 폴더를 C: 드라이브로 옮기세요.
  - 꼭 C: 드라이브가 아니여도 됩니다. 설치할 폴더에 옮겨주세요.
-> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064524659426611300/Screenshot_2023-01-16_213730_.png"  alt="FFmpeg Folder"  width="60%">
+> <img  src="https://github.com/Emin-G/Img/blob/main/daydreamf4.png?raw=true"  alt="FFmpeg Folder"  width="60%">
 
 ---
 
@@ -207,14 +209,14 @@ Daydream, StellarLoom 프로젝트를 체험해보고 싶다면 유피를 서버
 ---
 
 ### 6. 폴더 위치를 복사해주세요.
-> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064525641149583430/Screenshot_2023-01-16_214359.png"  alt="FFmpeg Folder"  width="100%">
+> <img  src="https://github.com/Emin-G/Img/blob/main/daydreamf6.png?raw=true"  alt="FFmpeg Folder"  width="100%">
 > 핑크색 박스 부분을 누르고 복사해주세요.
 
 ---
 
 ### 7. 시스템 환경 변수 편집을 검색하세요.
-> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064527944514551818/2023-01-16_214925.png"  alt="Taskbar Search"  width="40%">
-> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064528349705277440/2023-01-16_214925_plus.png"  alt="Search environment"  width="100%">
+> <img  src="https://github.com/Emin-G/Img/blob/main/daydreamf7-1.png?raw=true"  alt="Taskbar Search"  width="40%">
+> <img  src="https://github.com/Emin-G/Img/blob/main/daydreamf7-2.png?raw=true"  alt="Search environment"  width="100%">
 > 
 > 와타시의 윈도우 설치 언어가 영어라서 저따구로 나온겁니다.
 > 
@@ -225,7 +227,7 @@ Daydream, StellarLoom 프로젝트를 체험해보고 싶다면 유피를 서버
 ---
 
 ### 8. 환경 변수를 누르세요.
-> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064529855217143859/Screenshot_2023-01-16_215943.png"  alt="System Properties"  width="50%">
+> <img  src="https://github.com/Emin-G/Img/blob/main/daydreamf8.png?raw=true"  alt="System Properties"  width="50%">
 > 
 > 다시 한번 말하지만 와타시의 윈도우 설치 언어가 영어라서 저따구로 나온겁니다.
 > 
@@ -236,14 +238,14 @@ Daydream, StellarLoom 프로젝트를 체험해보고 싶다면 유피를 서버
 ---
 
 ### 9. Path를 누르고 편집을 누르세요.
-> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064531313547296879/Screenshot_2023-01-16_220408.png"  alt="Environment variables"  width="100%">
+> <img  src="https://github.com/Emin-G/Img/blob/main/daydreamf9.png?raw=true"  alt="Environment variables"  width="100%">
 > 
 > 다시 한번 말하지만
 
 ---
 
 ### 10. 새로 만들기를 누르고 복사 했던 값을 붙여넣고 확인을 누르세요.
-> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064532231026126869/Screenshot_2023-01-16_220925.png"  alt="Edit environment variable"  width="80%">
+> <img  src="https://github.com/Emin-G/Img/blob/main/daydreamf10.png?raw=true"  alt="Edit environment variable"  width="80%">
 > 다시 한번
 
 ---
@@ -253,8 +255,8 @@ Daydream, StellarLoom 프로젝트를 체험해보고 싶다면 유피를 서버
 ---
 
 ### end. cmd를 열고 ffmpeg를 입력해서 설치가 잘 되었는지 확인합니다.
-> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064527944514551818/2023-01-16_214925.png"  alt="Taskbar Search"  width="40%">
-> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064534441923444766/2023-01-16_214925_plus_alpha.png"  alt="Search cmd"  width="100%">
+> <img  src="https://github.com/Emin-G/Img/blob/main/daydreamfe-1.png?raw=true"  alt="Taskbar Search"  width="40%">
+> <img  src="https://github.com/Emin-G/Img/blob/main/daydreamfe-2.png?raw=true"  alt="Search cmd"  width="100%">
 > 
 > 매우 자주 말하지만 와타시의 윈도우 설치 언어가 영어라서 저따구로 나온겁니다.
 > 
@@ -262,12 +264,12 @@ Daydream, StellarLoom 프로젝트를 체험해보고 싶다면 유피를 서버
 > 
 > 우치노 개발자가 고맨.
 > 
-> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064535275973398528/Screenshot_2023-01-16_222155.png"  alt="cmd"  width="100%">
+> <img  src="https://github.com/Emin-G/Img/blob/main/daydreamfe-3.png?raw=true"  alt="cmd"  width="100%">
 > 오류가 나지 않는다면 성공.
 
 ## Daydream
 ### 1. 위로 올려 Code > Download ZIP을 누르세요.
-> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064543519735300136/Screenshot_2023-01-16_225444.png"  alt="Discord Developers Center"  width="100%">
+> <img  src="https://github.com/Emin-G/Img/blob/main/daydreamd1.png?raw=true"  alt="Discord Developers Center"  width="100%">
 > 
 > 한국어로는 다르게 표시될 수 있습니다.
 
@@ -284,48 +286,48 @@ Daydream, StellarLoom 프로젝트를 체험해보고 싶다면 유피를 서버
 ---
 
 ### 2. New Application을 누르세요.
-> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064537183723212971/Screenshot_2023-01-16_222918.png"  alt="Discord Developers Center"  width="100%">
+> <img  src="https://github.com/Emin-G/Img/blob/main/daydreamd2.png?raw=true"  alt="Discord Developers Center"  width="100%">
 
 ---
 
 ### 3. 프로젝트 이름을 입력하고 Create를 누르세요.
-> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064538645282963537/Screenshot_2023-01-16_223254.png"  alt="Discord Developers Center"  width="70%">
+> <img  src="https://github.com/Emin-G/Img/blob/main/daydreamd3.png?raw=true"  alt="Discord Developers Center"  width="70%">
 
 ---
 
 ### 4. Bot을 누르고 Add Bot을 누르세요.
-> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064539646463324300/Screenshot_2023-01-16_223936.png"  alt="Discord Developers Center"  width="100%">
+> <img  src="https://github.com/Emin-G/Img/blob/main/daydreamd4.png?raw=true"  alt="Discord Developers Center"  width="100%">
 
 ---
 
 ### 5. 뚜잇!
-> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064540140866916444/Screenshot_2023-01-16_224205.png"  alt="Discord Developers Center"  width="60%">
+> <img  src="https://github.com/Emin-G/Img/blob/main/daydreamd5.png?raw=true"  alt="Discord Developers Center"  width="60%">
 
 ---
 
 ### 6. 아래로 내려 MESSAGE CONTENT INTENT를 키고 Save Changes를 누르세요.
-> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064565089396600862/Screenshot_2023-01-17_002055.png"  alt="Discord Developers Center"  width="100%">
+> <img  src="https://github.com/Emin-G/Img/blob/main/daydreamd6.png?raw=true"  alt="Discord Developers Center"  width="100%">
 
 ---
 
 ### 7. Reset Token을 누르세요.
-> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064540872269635626/Screenshot_2023-01-16_224409.png"  alt="Discord Developers Center"  width="100%">
+> <img  src="https://github.com/Emin-G/Img/blob/main/daydreamd7.png?raw=true"  alt="Discord Developers Center"  width="100%">
 
 ---
 
 ### 8. 저스트 뚜잇!
-> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064541267649888307/Screenshot_2023-01-16_224624.png"  alt="Discord Developers Center"  width="100%">
+> <img  src="https://github.com/Emin-G/Img/blob/main/daydreamd8.png?raw=true"  alt="Discord Developers Center"  width="100%">
 
 ---
 
 ### 9. Copy를 누르세요.
-> <img  src="https://cdn.discordapp.com/attachments/807077862880444456/1064542707214712912/Screenshot_2023-01-16_225116.png"  alt="Discord Developers Center"  width="100%">
+> <img  src="https://github.com/Emin-G/Img/blob/main/daydreamd9.png?raw=true"  alt="Discord Developers Center"  width="100%">
 
 ---
 
 ### 10. 설치했던 Daydream 폴더 안의 .env 파일을 메모장으로 열어주세요.
-> <img src="https://cdn.discordapp.com/attachments/807077862880444456/1064546247190511686/image.png"  alt="Discord Developers Center"  width="20%">
-> <img src="https://cdn.discordapp.com/attachments/807077862880444456/1064545854603657267/2023-01-16_214925_plus_alpha_beta.png"  alt="Discord Developers Center"  width="50%">
+> <img src="https://github.com/Emin-G/Img/blob/main/daydreamd10-1.png?raw=true"  alt="Discord Developers Center"  width="20%">
+> <img src="https://github.com/Emin-G/Img/blob/main/daydreamd10-2.png?raw=true"  alt="Discord Developers Center"  width="50%">
 > 
 > .env 파일을 따블클릭하고 메모장 > 한번만 클릭
 > Visual Studio Code로 여는것도 괜찮습니다. 대환영합니다.
@@ -339,7 +341,7 @@ Daydream, StellarLoom 프로젝트를 체험해보고 싶다면 유피를 서버
 ---
 
 ### 12. Oauth2를 누르고 Copy를 누르세요.
-> <img src="https://cdn.discordapp.com/attachments/807077862880444456/1064550390701498458/Screenshot_2023-01-16_232149.png"  alt="Discord Developers Center"  width="100%">
+> <img src="https://github.com/Emin-G/Img/blob/main/daydreamd12.png?raw=true"  alt="Discord Developers Center"  width="100%">
 
 ---
 
@@ -350,12 +352,12 @@ Daydream, StellarLoom 프로젝트를 체험해보고 싶다면 유피를 서버
 ---
 
 ### 14. URL Generator를 누르고 Bot을 체크하세요.
-> <img src="https://cdn.discordapp.com/attachments/807077862880444456/1064551452594417714/Screenshot_2023-01-16_232642.png"  alt="Discord Developers Center"  width="100%">
+> <img src="https://github.com/Emin-G/Img/blob/main/daydreamd14.png?raw=true"  alt="Discord Developers Center"  width="100%">
 
 ---
 
 ### 15. 아래와 같이 체크하고 Copy를 누르세요.
-> <img src="https://cdn.discordapp.com/attachments/807077862880444456/1064552830830116955/Screenshot_2023-01-16_233035.png"  alt="Discord Developers Center"  width="100%">
+> <img src="https://github.com/Emin-G/Img/blob/main/daydreamd15.png?raw=true"  alt="Discord Developers Center"  width="100%">
 > 
 > 추천하지는 않지만 Administrator (관리자 권한) 을 체크하면 나머지는 체크하지 않아도 됩니다.
 > 관리자 권한을 봇에게 주고 싶다면 Administrator (관리자 권한) 만 체크하세요.
@@ -384,8 +386,8 @@ API 키가 입력되지 않거나 잘못되면 **검색** 기능만 작동하지
 ---
 
 ### 1. 설치했던 Daydream 폴더 안의 .env 파일을 메모장으로 열어주세요.
-> <img src="https://cdn.discordapp.com/attachments/807077862880444456/1064546247190511686/image.png"  alt="Discord Developers Center"  width="20%">
-> <img src="https://cdn.discordapp.com/attachments/807077862880444456/1064545854603657267/2023-01-16_214925_plus_alpha_beta.png"  alt="Discord Developers Center"  width="50%">
+> <img src="https://github.com/Emin-G/Img/blob/main/daydreamy1-1.png?raw=true"  alt="Discord Developers Center"  width="20%">
+> <img src="https://github.com/Emin-G/Img/blob/main/daydreamy1-2.png?raw=true"  alt="Discord Developers Center"  width="50%">
 > 
 > .env 파일을 따블클릭하고 메모장 > 한번만 클릭
 > Visual Studio Code로 여는것도 괜찮습니다. 대환영합니다.
@@ -398,7 +400,7 @@ API 키가 입력되지 않거나 잘못되면 **검색** 기능만 작동하지
 
 ## 모듈
 ### 1. Daydream 폴더 안에서 cmd를 엽니다.
-> <img src="https://cdn.discordapp.com/attachments/807077862880444456/1064555080596078602/2023-01-16_214925_plus_alpha_beta_gamma.png"  alt="Daydream Folder"  width="100%">
+> <img src="https://github.com/Emin-G/Img/blob/main/daydreamm1.png?raw=true"  alt="Daydream Folder"  width="100%">
 > 
 > 핑크색 박스 부분을 누르고 cmd 입력 > Enter
 
@@ -407,13 +409,13 @@ API 키가 입력되지 않거나 잘못되면 **검색** 기능만 작동하지
 ### 2. 아래 명령어를 입력합니다.
 > `npm install`
 > 
-> <img src="https://cdn.discordapp.com/attachments/807077862880444456/1064557032310587474/Screenshot_2023-01-16_234755.png"  alt="Daydream Folder"  width="100%">
+> <img src="https://github.com/Emin-G/Img/blob/main/daydreamm2.png?raw=true"  alt="Daydream Folder"  width="100%">
 > 
 > 위와 같이 뜨면 성공
 
 ## 실행
 ### 1. Daydream 폴더 안에서 cmd를 엽니다.
-> <img src="https://cdn.discordapp.com/attachments/807077862880444456/1064555080596078602/2023-01-16_214925_plus_alpha_beta_gamma.png"  alt="Daydream Folder"  width="100%">
+> <img src="https://github.com/Emin-G/Img/blob/main/daydreams1.png?raw=true"  alt="Daydream Folder"  width="100%">
 > 
 > 핑크색 박스 부분을 누르고 cmd 입력 > Enter
 
@@ -422,7 +424,7 @@ API 키가 입력되지 않거나 잘못되면 **검색** 기능만 작동하지
 ### 2. 아래 명령어를 입력합니다.
 > `node .`
 > 
-> <img src="https://cdn.discordapp.com/attachments/807077862880444456/1064558055099990216/Screenshot_2023-01-16_235242.png"  alt="Daydream Folder"  width="100%">
+> <img src="https://github.com/Emin-G/Img/blob/main/daydreams2.png?raw=true"  alt="Daydream Folder"  width="100%">
 > 
 > 축하합니다! 드디어 끝났습니다!!! 앞으로 봇을 키실 때 이렇게 하시면 됩니다.
 

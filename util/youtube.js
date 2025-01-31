@@ -1,5 +1,5 @@
 const https = require("https");
-const ytdl = require("ytdl-core");
+const ytdl = require("@distube/ytdl-core");
 const ytpl = require("ytpl");
 require("dotenv").config();
 

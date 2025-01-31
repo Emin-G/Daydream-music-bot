@@ -1,6 +1,6 @@
 const { EmbedBuilder, SlashCommandBuilder } = require("discord.js");
 
-const ytdl = require("ytdl-core");
+const ytdl = require("@distube/ytdl-core");
 const ytpl = require("ytpl");
 const youtube = require("../util/youtube.js");
 

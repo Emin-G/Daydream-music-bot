@@ -5,7 +5,7 @@
   "description": "심플한 한국어 기반 디스코드 뮤직 봇",
   "main": "index.js",
   "engines": {
-    "node": "18.x"
+    "node": "20.x"
   },
   "author": "Emin_G",
   "license": "MIT",
